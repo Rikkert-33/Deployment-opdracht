@@ -1,0 +1,19 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>My website</title>
+</head>
+
+<body>
+    <h1>About me</h1>
+    <p>
+        Hi, my name is {{ .Name }} and my hobbies are:
+    </p>
+    <ul>
+        {{ range .Hobbies }}
+            <li>{{ . }}</li>
+        {{ end }}
+    </ul>
+</body>
+</html>
